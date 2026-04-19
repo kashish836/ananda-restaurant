@@ -1,85 +1,124 @@
 # 🍛 Ananda — Fine Indian Cuisine Website
 
-A fully responsive, single-page restaurant website for **Ananda**, a fictional fine-dining Indian restaurant. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no dependencies.
+A modern, fully responsive restaurant website designed to deliver a premium dining experience through elegant UI, smooth animations, and interactive features. Built using **vanilla HTML, CSS, and JavaScript** — no frameworks, no dependencies.
+
+---
+
+## 🔗 Live Demo
+
+👉 *(Will be added after deployment)*
+
+---
+
+## 📸 Preview
+
+## 📸 Preview
+
+![Hero](assets/preview.png)
+![Menu](assets/menu.png)
+![Gallery](assets/gallery.png)
+![Reservation](assets/reservation.png)
+
+---
 
 ## ✨ Features
 
-- **Sticky Navigation** — shrinks and changes colour on scroll; hamburger menu on mobile
-- **Hero Section** — full-viewport parallax background with animated floating spice particles
-- **Scroll-Reveal Animations** — IntersectionObserver-powered fade/slide-in for every section
-- **Interactive Menu** — dish cards with hover zoom, veg/non-veg indicators, and spice-level icons
-- **Regional Cuisine** — alternating two-column layout highlighting North, South, and West Indian cuisine
-- **3D Tilt Cards** — mouse-tracked CSS `rotateX/Y` perspective effect on the Experiences section
-- **Gallery + Lightbox** — masonry-style grid; click any photo to open a full-screen lightbox (Esc or outside-click to close)
-- **Reservation Form** — client-side validation with regex for email and phone, simulated async submission
-- **Merchandise / Pantry** — add-to-cart toast notification
-- **Google Maps Embed** — location section with address, hours, and phone
-- **Footer** — newsletter sign-up, social links, quick links
+* **Sticky Navigation** — shrinks and changes colour on scroll; hamburger menu on mobile
+* **Hero Section** — full-viewport parallax background with animated floating spice particles
+* **Scroll-Reveal Animations** — smooth fade/slide-in effects using IntersectionObserver
+* **Interactive Menu** — dish cards with hover zoom, veg/non-veg indicators, spice-level icons
+* **Regional Cuisine Section** — alternating layouts showcasing Indian diversity
+* **3D Tilt Cards** — interactive perspective hover effect
+* **Gallery + Lightbox** — click to view images in full screen
+* **Reservation Form** — validation + simulated async submission
+* **Merchandise Section** — add-to-cart toast notifications
+* **Google Maps Integration** — location, contact, and timing details
+* **Footer Section** — newsletter, social links, quick navigation
+
+---
+
+## 🧑‍💻 Tech Stack
+
+* HTML5
+* CSS3 (Flexbox, Grid, Animations)
+* JavaScript (Vanilla JS)
+
+---
 
 ## 🗂️ Project Structure
 
-```
 ananda-restaurant/
-├── index.html          # Main HTML — all sections
+├── index.html
 ├── css/
-│   └── styles.css      # All styles, CSS variables, responsive breakpoints
+│   └── styles.css
 ├── js/
-│   └── main.js         # All interactivity (nav, reveal, particles, tilt, lightbox, form)
-├── assets/             # Place any local images here (currently using Unsplash CDN)
+│   └── main.js
+├── assets/
 ├── .gitignore
 └── README.md
-```
+
+---
 
 ## 🚀 Getting Started
 
-No build step needed — just open the file in your browser:
-
 ```bash
-# Clone the repo
 git clone https://github.com/<your-username>/ananda-restaurant.git
 cd ananda-restaurant
-
-# Open directly
-open index.html       # macOS
-start index.html      # Windows
-xdg-open index.html   # Linux
 ```
 
-Or serve it locally for a better experience (avoids `background-attachment: fixed` quirks on some browsers):
+Open in browser:
 
 ```bash
-# Python 3
-python -m http.server 8000
-
-# Node (npx)
-npx serve .
+start index.html
 ```
 
-Then visit `http://localhost:8000`.
+Or run a local server:
+
+```bash
+python -m http.server 8000
+```
+
+---
 
 ## 🛠️ Customisation
 
-| What to change | Where |
-|---|---|
-| Restaurant name, copy | `index.html` |
-| Colours, fonts | `css/styles.css` → `:root` CSS variables |
-| Menu items / prices | `index.html` — Menu section |
-| Google Maps location | `index.html` — `<iframe src="...">` in the Location section |
-| Reservation logic (real API) | `js/main.js` → `handleReservation()` |
-| Add local images | Drop files in `assets/` and update `src` attributes in `index.html` |
+| What to change | Where          |
+| -------------- | -------------- |
+| Content / Text | index.html     |
+| Colors / Theme | css/styles.css |
+| Menu Items     | index.html     |
+| Images         | assets/        |
+| Form Logic     | js/main.js     |
+
+---
 
 ## 🌐 Deployment
 
-The site is a static bundle — deploy anywhere for free:
+This is a static website — can be deployed easily on:
 
-- **GitHub Pages** — push to `main`, enable Pages in repo Settings → Pages → `/ (root)`
-- **Netlify** — drag-and-drop the folder at netlify.com/drop
-- **Vercel** — `npx vercel` from the project directory
+* Netlify
+* Vercel
+* GitHub Pages
+
+---
 
 ## 📸 Image Credits
 
-All photos are sourced from [Unsplash](https://unsplash.com) and used under the [Unsplash License](https://unsplash.com/license).
+* Some images are sourced from Unsplash and used under their free license.
+* Other images are used for educational/demo purposes only.
+* All rights belong to their respective owners.
+* These will be replaced with properly licensed assets in future updates.
+
+---
+
+## 👩‍💻 Author
+
+**Kashish Bhiwapurkar**
+Aspiring Python Developer | Future AI Engineer
+
+---
 
 ## 📄 License
 
-MIT — free to use, modify, and distribute.
+MIT License — free to use, modify, and distribute.
+
