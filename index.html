@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananda | Fine Indian Cuisine</title>
+    <meta name="description" content="Experience the richness of authentic Indian cuisine. From rich North Indian curries to vibrant South Indian delicacies.">
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:title" content="Ananda | Fine Indian Cuisine">
+    <meta property="og:description" content="A symphony of spices and tradition. Experience the royal taste of India.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ════════════════════════════════
+         NAVIGATION
+    ════════════════════════════════ -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Anan<span>da</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">Our Story</a>
+                <a href="#menu">Menu</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reservation">Reservations</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ════════════════════════════════
+         1. HERO
+    ════════════════════════════════ -->
+    <header class="hero" id="home">
+        <div class="particles-container" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">The Royal Taste of India</span>
+            <h1 class="hero-title">A Symphony of Spices &amp; Tradition</h1>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#reservation" class="btn btn-outline" style="color:white; border-color:white;">Book a Table</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ════════════════════════════════
+         2. ABOUT
+    ════════════════════════════════ -->
+    <section id="about" class="container reveal">
+        <div class="about-grid">
+            <div class="about-text reveal reveal-left">
+                <span class="section-subtitle">Our Heritage</span>
+                <h2 class="section-title" style="text-align:left; margin-bottom:20px;">Culinary Excellence Since 1995</h2>
+                <p>Welcome to Ananda, where ancient recipes meet modern elegance. We bring you the authentic flavors of India, crafted with hand-picked spices, fresh ingredients, and generations of culinary secrets.</p>
+                <p>From the rich, creamy gravies of the North to the fiery, aromatic delicacies of the South, every dish is a celebration of India's diverse gastronomic landscape.</p>
+                <div class="signature">Chef Rajesh Kapoor</div>
+            </div>
+            <div class="about-img reveal reveal-right">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.uYauB3xyJNHO4B38EFKi4AHaEO?pid=Api&h=220&P=0&w=350&c=7"
+                     alt="Indian Spices and Cooking" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         3. WHY DINE HERE
+    ════════════════════════════════ -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">The Ananda Promise</span>
+                <h2 class="section-title">Why Dine With Us</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12,2A9,9 0 0,1 21,11A9,9 0 0,1 12,20A9,9 0 0,1 3,11A9,9 0 0,1 12,2M12,4A7,7 0 0,0 5,11A7,7 0 0,0 12,18A7,7 0 0,0 19,11A7,7 0 0,0 12,4M12,12.5A1.5,1.5 0 0,1 10.5,11A1.5,1.5 0 0,1 12,9.5A1.5,1.5 0 0,1 13.5,11A1.5,1.5 0 0,1 12,12.5M12,22A2,2 0 0,1 10,24A2,2 0 0,1 8,22H16A2,2 0 0,1 14,24A2,2 0 0,1 12,22Z"/></svg>
+                    </div>
+                    <h4>Authentic Recipes</h4>
+                    <p>Traditional methods and heritage recipes passed down through generations of master chefs.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay:0.1s;">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C9.87 5.74 9.35 8.1 10 10.04C9.53 9.78 9.17 9.38 8.86 8.94C8.42 8.3 8.08 7.58 7.8 6.84C7.38 8.15 7.42 9.61 8.04 10.84C8.44 11.66 9.07 12.33 9.73 12.96C10.74 13.92 11.96 14.65 13 15.65C13.62 16.24 14.1 17.03 14 17.9C13.9 18.73 13.34 19.46 12.63 19.92C11.53 20.61 10.15 20.73 8.9 20.37C10.22 21.36 12 21.75 13.63 21.4C15.28 21.05 16.73 19.96 17.47 18.46C18.23 16.94 18.17 15.11 17.37 13.64C17.14 13.2 16.83 12.83 16.53 12.44C16.14 11.95 15.7 11.5 15.29 11.03C16.12 11.45 16.88 12 17.5 12.67C17.66 12.16 17.75 11.64 17.66 11.2Z"/></svg>
+                    </div>
+                    <h4>Fresh Spices</h4>
+                    <p>We source whole spices directly from Indian farms, roasted and ground in-house daily.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay:0.2s;">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3C7.03 3 3 7.03 3 12S7.03 21 12 21 21 16.97 21 12 16.97 3 12 3M14 17H10V15H14V17M14 13H10V7H14V13Z"/></svg>
+                    </div>
+                    <h4 style="color:var(--c-green)">Pure Vegetarian</h4>
+                    <p>A dedicated kitchen space and extensive menu celebrating India's rich vegetarian heritage.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay:0.3s;">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/></svg>
+                    </div>
+                    <h4>Regional Thalis</h4>
+                    <p>Experience a complete journey of flavors with our perfectly balanced affordable thali meals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         4. MENU
+    ════════════════════════════════ -->
+    <section id="menu" class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Discover Flavors</span>
+            <h2 class="section-title">Signature Dishes</h2>
+        </div>
+        <div class="menu-grid">
+
+            <!-- Dish 1 — Murgh Makhani -->
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=800&auto=format&fit=crop"
+                         alt="Butter Chicken" loading="lazy">
+                    <div class="veg-indicator non-veg-indicator" title="Non-Vegetarian"></div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Murgh Makhani</h3>
+                        <span class="menu-price">₹699</span>
+                    </div>
+                    <p class="menu-desc">Classic Butter Chicken. Tender tandoori chicken simmered in a rich, creamy tomato and fenugreek sauce.</p>
+                    <div class="spice-level" aria-label="Spice level: 1 out of 3">
+                        <svg class="spice-active" viewBox="0 0 24 24"><path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C9.87 5.74 9.35 8.1 10 10.04C9.53 9.78 9.17 9.38 8.86 8.94C8.42 8.3 8.08 7.58 7.8 6.84C7.38 8.15 7.42 9.61 8.04 10.84C8.44 11.66 9.07 12.33 9.73 12.96C10.74 13.92 11.96 14.65 13 15.65C13.62 16.24 14.1 17.03 14 17.9C13.9 18.73 13.34 19.46 12.63 19.92C11.53 20.61 10.15 20.73 8.9 20.37C10.22 21.36 12 21.75 13.63 21.4C15.28 21.05 16.73 19.96 17.47 18.46C18.23 16.94 18.17 15.11 17.37 13.64C17.14 13.2 16.83 12.83 16.53 12.44C16.14 11.95 15.7 11.5 15.29 11.03C16.12 11.45 16.88 12 17.5 12.67C17.66 12.16 17.75 11.64 17.66 11.2Z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C9.87 5.74 9.35 8.1 10 10.04C9.53 9.78 9.17 9.38 8.86 8.94C8.42 8.3 8.08 7.58 7.8 6.84C7.38 8.15 7.42 9.61 8.04 10.84C8.44 11.66 9.07 12.33 9.73 12.96C10.74 13.92 11.96 14.65 13 15.65C13.62 16.24 14.1 17.03 14 17.9C13.9 18.73 13.34 19.46 12.63 19.92C11.53 20.61 10.15 20.73 8.9 20.37C10.22 21.36 12 21.75 13.63 21.4C15.28 21.05 16.73 19.96 17.47 18.46C18.23 16.94 18.17 15.11 17.37 13.64C17.14 13.2 16.83 12.83 16.53 12.44C16.14 11.95 15.7 11.5 15.29 11.03C16.12 11.45 16.88 12 17.5 12.67C17.66 12.16 17.75 11.64 17.66 11.2Z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C9.87 5.74 9.35 8.1 10 10.04C9.53 9.78 9.17 9.38 8.86 8.94C8.42 8.3 8.08 7.58 7.8 6.84C7.38 8.15 7.42 9.61 8.04 10.84C8.44 11.66 9.07 12.33 9.73 12.96C10.74 13.92 11.96 14.65 13 15.65C13.62 16.24 14.1 17.03 14 17.9C13.9 18.73 13.34 19.46 12.63 19.92C11.53 20.61 10.15 20.73 8.9 20.37C10.22 21.36 12 21.75 13.63 21.4C15.28 21.05 16.73 19.96 17.47 18.46C18.23 16.94 18.17 15.11 17.37 13.64C17.14 13.2 16.83 12.83 16.53 12.44C16.14 11.95 15.7 11.5 15.29 11.03C16.12 11.45 16.88 12 17.5 12.67C17.66 12.16 17.75 11.64 17.66 11.2Z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dish 2 — Paneer Tikka Masala -->
+            <div class="menu-card reveal" style="transition-delay:0.1s;">
+                <div class="menu-img-wrap">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.-Pb1qPzig2lpOj8G65-AFAHaE7?pid=Api&h=220&P=0&w=350&c=7"
+                         alt="Paneer Tikka" loading="lazy">
+                    <div class="veg-indicator" title="Vegetarian"></div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Paneer Tikka Masala</h3>
+                        <span class="menu-price">₹499</span>
+                    </div>
+                    <p class="menu-desc">Charcoal-grilled cottage cheese cubes tossed in a spiced onion-tomato gravy with bell peppers.</p>
+                    <div class="spice-level" aria-label="Spice level: 2 out of 3">
+                        <svg class="spice-active" viewBox="0 0 24 24"><path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C9.87 5.74 9.35 8.1 10 10.04C9.53 9.78 9.17 9.38 8.86 8.94C8.42 8.3 8.08 7.58 7.8 6.84C7.38 8.15 7.42 9.61 8.04 10.84C8.44 11.66 9.07 12.33 9.73 12.96C10.74 13.92 11.96 14.65 13 15.65C13.62 16.24 14.1 17.03 14 17.9C13.9 18.73 13.34 19.46 12.63 19.92C11.53 20.61 10.15 20.73 8.9 20.37C10.22 21.36 12 21.75 13.63 21.4C15.28 21.05 16.73 19.96 17.47 18.46C18.23 16.94 18.17 15.11 17.37 13.64C17.14 13.2 16.83 12.83 16.53 12.44C16.14 11.95 15.7 11.5 15.29 11.03C16.12 11.45 16.88 12 17.5 12.67C17.66 12.16 17.75 11.64 17.66 11.2Z"/></svg>
+                        <svg class="spice-active" viewBox="0 0 24 24"><path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C9.87 5.74 9.35 8.1 10 10.04C9.53 9.78 9.17 9.38 8.86 8.94C8.42 8.3 8.08 7.58 7.8 6.84C7.38 8.15 7.42 9.61 8.04 10.84C8.44 11.66 9.07 12.33 9.73 12.96C10.74 13.92 11.96 14.65 13 15.65C13.62 16.24 14.1 17.03 14 17.9C13.9 18.73 13.34 19.46 12.63 19.92C11.53 20.61 10.15 20.73 8.9 20.37C10.22 21.36 12 21.75 13.63 21.4C15.28 21.05 16.73 19.96 17.47 18.46C18.23 16.94 18.17 15.11 17.37 13.64C17.14 13.2 16.83 12.83 16.53 12.44C16.14 11.95 15.7 11.5 15.29 11.03C16.12 11.45 16.88 12 17.5 12.67C17.66 12.16 17.75 11.64 17.66 11.2Z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C9.87 5.74 9.35 8.1 10 10.04C9.53 9.78 9.17 9.38 8.86 8.94C8.42 8.3 8.08 7.58 7.8 6.84C7.38 8.15 7.42 9.61 8.04 10.84C8.44 11.66 9.07 12.33 9.73 12.96C10.74 13.92 11.96 14.65 13 15.65C13.62 16.24 14.1 17.03 14 17.9C13.9 18.73 13.34 19.46 12.63 19.92C11.53 20.61 10.15 20.73 8.9 20.37C10.22 21.36 12 21.75 13.63 21.4C15.28 21.05 16.73 19.96 17.47 18.46C18.23 16.94 18.17 15.11 17.37 13.64C17.14 13.2 16.83 12.83 16.53 12.44C16.14 11.95 15.7 11.5 15.29 11.03C16.12 11.45 16.88 12 17.5 12.67C17.66 12.16 17.75 11.64 17.66 11.2Z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dish 3 — Hyderabadi Dum Biryani -->
+            <div class="menu-card reveal" style="transition-delay:0.2s;">
+                <div class="menu-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800&auto=format&fit=crop"
+                         alt="Hyderabadi Biryani" loading="lazy">
+                    <div class="veg-indicator non-veg-indicator"></div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Hyderabadi Dum Biryani</h3>
+                        <span class="menu-price">₹799</span>
+                    </div>
+                    <p class="menu-desc">Fragrant basmati rice slow-cooked with marinated tender lamb, saffron, and whole spices in a sealed pot.</p>
+                    <div class="spice-level" aria-label="Spice level: 3 out of 3">
+                        <svg class="spice-active" viewBox="0 0 24 24"><path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C9.87 5.74 9.35 8.1 10 10.04C9.53 9.78 9.17 9.38 8.86 8.94C8.42 8.3 8.08 7.58 7.8 6.84C7.38 8.15 7.42 9.61 8.04 10.84C8.44 11.66 9.07 12.33 9.73 12.96C10.74 13.92 11.96 14.65 13 15.65C13.62 16.24 14.1 17.03 14 17.9C13.9 18.73 13.34 19.46 12.63 19.92C11.53 20.61 10.15 20.73 8.9 20.37C10.22 21.36 12 21.75 13.63 21.4C15.28 21.05 16.73 19.96 17.47 18.46C18.23 16.94 18.17 15.11 17.37 13.64C17.14 13.2 16.83 12.83 16.53 12.44C16.14 11.95 15.7 11.5 15.29 11.03C16.12 11.45 16.88 12 17.5 12.67C17.66 12.16 17.75 11.64 17.66 11.2Z"/></svg>
+                        <svg class="spice-active" viewBox="0 0 24 24"><path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C9.87 5.74 9.35 8.1 10 10.04C9.53 9.78 9.17 9.38 8.86 8.94C8.42 8.3 8.08 7.58 7.8 6.84C7.38 8.15 7.42 9.61 8.04 10.84C8.44 11.66 9.07 12.33 9.73 12.96C10.74 13.92 11.96 14.65 13 15.65C13.62 16.24 14.1 17.03 14 17.9C13.9 18.73 13.34 19.46 12.63 19.92C11.53 20.61 10.15 20.73 8.9 20.37C10.22 21.36 12 21.75 13.63 21.4C15.28 21.05 16.73 19.96 17.47 18.46C18.23 16.94 18.17 15.11 17.37 13.64C17.14 13.2 16.83 12.83 16.53 12.44C16.14 11.95 15.7 11.5 15.29 11.03C16.12 11.45 16.88 12 17.5 12.67C17.66 12.16 17.75 11.64 17.66 11.2Z"/></svg>
+                        <svg class="spice-active" viewBox="0 0 24 24"><path d="M17.66 11.2C17.43 10.9 17.15 10.64 16.89 10.38C16.22 9.78 15.46 9.35 14.82 8.72C13.33 7.26 13 4.85 13.95 3C13 3.23 12.17 3.75 11.46 4.32C9.87 5.74 9.35 8.1 10 10.04C9.53 9.78 9.17 9.38 8.86 8.94C8.42 8.3 8.08 7.58 7.8 6.84C7.38 8.15 7.42 9.61 8.04 10.84C8.44 11.66 9.07 12.33 9.73 12.96C10.74 13.92 11.96 14.65 13 15.65C13.62 16.24 14.1 17.03 14 17.9C13.9 18.73 13.34 19.46 12.63 19.92C11.53 20.61 10.15 20.73 8.9 20.37C10.22 21.36 12 21.75 13.63 21.4C15.28 21.05 16.73 19.96 17.47 18.46C18.23 16.94 18.17 15.11 17.37 13.64C17.14 13.2 16.83 12.83 16.53 12.44C16.14 11.95 15.7 11.5 15.29 11.03C16.12 11.45 16.88 12 17.5 12.67C17.66 12.16 17.75 11.64 17.66 11.2Z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dish 4 — Mysore Masala Dosa -->
+            <div class="menu-card reveal">
+                <div class="menu-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=800&auto=format&fit=crop"
+                         alt="Masala Dosa" loading="lazy">
+                    <div class="veg-indicator" title="Vegetarian"></div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Mysore Masala Dosa</h3>
+                        <span class="menu-price">₹199</span>
+                    </div>
+                    <p class="menu-desc">Crispy fermented rice crepe spread with spicy red chutney and filled with seasoned potato mash. Served with sambar.</p>
+                </div>
+            </div>
+
+            <!-- Dish 5 — Pani Puri -->
+            <div class="menu-card reveal" style="transition-delay:0.1s;">
+                <div class="menu-img-wrap">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.VMcNMOQx4Yig1xEAKHi0kAHaE7?pid=Api&h=220&P=0&w=350&c=7"
+                         alt="Pani Puri" loading="lazy">
+                    <div class="veg-indicator" title="Vegetarian"></div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Pani Puri Shots</h3>
+                        <span class="menu-price">₹149</span>
+                    </div>
+                    <p class="menu-desc">Popular street food. Crispy hollow spheres filled with spiced potatoes and tangy mint-coriander water.</p>
+                </div>
+            </div>
+
+            <!-- Dish 6 — Gulab Jamun -->
+            <div class="menu-card reveal" style="transition-delay:0.2s;">
+                <div class="menu-img-wrap">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.dluRtowiRWM9gcQXEwIEuAHaG9?pid=Api&h=120&P=10&w=250&c=14"
+                         alt="Gulab Jamun" loading="lazy">
+                    <div class="veg-indicator" title="Vegetarian"></div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Saffron Gulab Jamun</h3>
+                        <span class="menu-price">₹1</span>
+                    </div>
+                    <p class="menu-desc">Warm, melt-in-the-mouth milk dumplings soaked in a fragrant rose and cardamom syrup.</p>
+                </div>
+            </div>
+
+        </div><!-- /.menu-grid -->
+        <div style="text-align:center; margin-top:50px;" class="reveal">
+            <a href="#" class="btn btn-primary">View Full Menu</a>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         5. REGIONAL CUISINE
+    ════════════════════════════════ -->
+    <section class="regional">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Culinary Map</span>
+                <h2 class="section-title">Flavors of India</h2>
+            </div>
+
+            <div class="region-item reveal">
+                <div class="region-img">
+                    <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?q=80&w=1000&auto=format&fit=crop"
+                         alt="North Indian Food" loading="lazy">
+                    <div class="region-name">North India</div>
+                </div>
+                <div class="region-content">
+                    <h3>The Royal Kitchens</h3>
+                    <p>Characterized by rich, creamy gravies, tandoor-baked breads, and aromatic spices like garam masala. Influenced by Mughal royalty, the cuisine is hearty and indulgent.</p>
+                    <div class="dish-tags">
+                        <span class="tag">Butter Chicken</span>
+                        <span class="tag">Rogan Josh</span>
+                        <span class="tag">Naan</span>
+                        <span class="tag">Dal Makhani</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="region-item reveal">
+                <div class="region-img">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.EqOVZTagkakOgGCSfTVzHAHaD2?pid=Api&h=220&P=0&w=350&c=7"
+                         alt="South Indian Food" loading="lazy">
+                    <div class="region-name">South India</div>
+                </div>
+                <div class="region-content">
+                    <h3>Coastal &amp; Spiced</h3>
+                    <p>A vibrant cuisine relying heavily on rice, lentils, coconut, and curry leaves. Known for its complex spice blends, fiery curries, and unique fermented delicacies.</p>
+                    <div class="dish-tags">
+                        <span class="tag">Masala Dosa</span>
+                        <span class="tag">Idli Sambar</span>
+                        <span class="tag">Chettinad Chicken</span>
+                        <span class="tag">Appam</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="region-item reveal">
+                <div class="region-img">
+                    <img src="https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?q=80&w=1000&auto=format&fit=crop"
+                         alt="West Indian Food" loading="lazy">
+                    <div class="region-name">West India</div>
+                </div>
+                <div class="region-content">
+                    <h3>Street Food &amp; Sweets</h3>
+                    <p>From the bustling streets of Mumbai to the vibrant culture of Gujarat and Rajasthan — a mix of spicy street snacks and sweet, savory vegetarian thalis.</p>
+                    <div class="dish-tags">
+                        <span class="tag">Vada Pav</span>
+                        <span class="tag">Pav Bhaji</span>
+                        <span class="tag">Dhokla</span>
+                        <span class="tag">Laal Maas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         6. DINING EXPERIENCES (3D TILT)
+    ════════════════════════════════ -->
+    <section id="experiences" class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">More Than A Meal</span>
+            <h2 class="section-title">Unique Experiences</h2>
+        </div>
+        <div class="experiences-grid">
+            <div class="tilt-card reveal">
+                <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=800&auto=format&fit=crop"
+                     alt="Thali Experience" loading="lazy">
+                <div class="tilt-content">
+                    <h3>The Maharaja Thali</h3>
+                    <p>A grand platter featuring 15 assorted regional delicacies, breads, and desserts. The traditional way to feast.</p>
+                </div>
+            </div>
+            <div class="tilt-card reveal" style="transition-delay:0.1s;">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop"
+                     alt="Private Dining" loading="lazy">
+                <div class="tilt-content">
+                    <h3>Private Dining</h3>
+                    <p>Celebrate special moments in our exclusively designed private rooms with dedicated service and custom menus.</p>
+                </div>
+            </div>
+            <div class="tilt-card reveal" style="transition-delay:0.2s;">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop"
+                     alt="Cooking Masterclass" loading="lazy">
+                <div class="tilt-content">
+                    <h3>Cooking Masterclass</h3>
+                    <p>Learn the secrets of blending Indian spices and curries with our Executive Chef. Ends with a tasting lunch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         7. GALLERY
+    ════════════════════════════════ -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Visual Feast</span>
+                <h2 class="section-title">Our Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large reveal">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop"
+                         alt="Restaurant Interior" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=500&auto=format&fit=crop"
+                         alt="Indian Chef" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=500&auto=format&fit=crop"
+                         alt="Tandoor Cooking" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=500&auto=format&fit=crop"
+                         alt="Biryani Dish" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=500&auto=format&fit=crop"
+                         alt="Indian Spices" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         8. EVENTS
+    ════════════════════════════════ -->
+    <section id="events" class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Celebrate With Us</span>
+            <h2 class="section-title">Upcoming Events</h2>
+        </div>
+        <div class="events-grid">
+            <div class="event-card reveal">
+                <div class="event-date">Oct 24 – 26</div>
+                <div class="event-content">
+                    <h3>Diwali Grand Feast</h3>
+                    <p>Celebrate the festival of lights with a special 7-course tasting menu featuring royal desserts and live classical sitar music.</p>
+                    <a href="#reservation" class="btn btn-outline" style="align-self:flex-start;">Book Now</a>
+                </div>
+            </div>
+            <div class="event-card reveal" style="transition-delay:0.1s;">
+                <div class="event-date">Every Friday</div>
+                <div class="event-content">
+                    <h3>Street Food Nights</h3>
+                    <p>Our patio transforms into a bustling Indian street market. Enjoy unlimited Chaat, Kathi Rolls, and Chai in a vibrant atmosphere.</p>
+                    <a href="#reservation" class="btn btn-outline" style="align-self:flex-start;">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         9. RESERVATION
+    ════════════════════════════════ -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="res-container reveal">
+                <div class="section-header" style="margin-bottom:30px;">
+                    <span class="section-subtitle">Join Us</span>
+                    <h2 class="section-title">Make a Reservation</h2>
+                </div>
+                <form id="resForm" onsubmit="handleReservation(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="resName">Full Name</label>
+                            <input type="text" id="resName" required placeholder="Aryan Sharma">
+                        </div>
+                        <div class="form-group">
+                            <label for="resEmail">Email Address</label>
+                            <input type="email" id="resEmail" required placeholder="aryan@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="resPhone">Phone Number</label>
+                            <input type="tel" id="resPhone" required placeholder="+91 98765 43210">
+                        </div>
+                        <div class="form-group">
+                            <label for="resGuests">Number of Guests</label>
+                            <select id="resGuests" required>
+                                <option value="1">1 Person</option>
+                                <option value="2" selected>2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="resDate">Date</label>
+                            <input type="date" id="resDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="resTime">Time</label>
+                            <input type="time" id="resTime" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; padding:16px; font-size:1.1rem;">
+                        Confirm Reservation
+                    </button>
+                    <div id="formMsg" class="form-msg"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         10. MERCHANDISE
+    ════════════════════════════════ -->
+    <section class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Take Ananda Home</span>
+            <h2 class="section-title">Pantry &amp; Gifts</h2>
+        </div>
+        <div class="merch-grid">
+            <div class="merch-card reveal">
+                <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=400&auto=format&fit=crop"
+                     alt="Spice Kit" class="merch-img" loading="lazy" style="border-radius:4px;">
+                <h4>Signature Garam Masala</h4>
+                <div class="merch-price">₹299</div>
+                <button class="btn btn-outline" onclick="addToCart('Signature Garam Masala')">Add to Cart</button>
+            </div>
+            <div class="merch-card reveal" style="transition-delay:0.1s;">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.DsezVejWM0aVYNpLuN7JBQHaLG?pid=Api&h=220&P=0&w=350&c=7"
+                     alt="Chai Blend" class="merch-img" loading="lazy" style="border-radius:4px;">
+                <h4>Assam Masala Chai Blend</h4>
+                <div class="merch-price">₹149</div>
+                <button class="btn btn-outline" onclick="addToCart('Assam Masala Chai Blend')">Add to Cart</button>
+            </div>
+            <div class="merch-card reveal" style="transition-delay:0.2s;">
+                <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=400&auto=format&fit=crop"
+                     alt="Recipe Book" class="merch-img" loading="lazy" style="border-radius:4px;">
+                <h4>The Ananda Cookbook</h4>
+                <div class="merch-price">₹399</div>
+                <button class="btn btn-outline" onclick="addToCart('The Ananda Cookbook')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════
+<!-- ════════════════════════════════
+     11. LOCATION
+════════════════════════════════ -->
+<section id="location" class="location container reveal">
+    <div class="loc-grid">
+        <div class="loc-info">
+            <h3>Visit Us</h3>
+            <div class="info-item">
+                <svg viewBox="0 0 24 24"><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/></svg>
+                <div>
+                    <p>Address</p>
+                    <strong>123, Sadar Bazar Road,<br>Sadar, Nagpur – 440 001,<br>Maharashtra, India</strong>
+                </div>
+            </div>
+            <div class="info-item">
+                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12S6.47 22 11.99 22C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12S7.58 4 12 4 20 7.58 20 12 16.42 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z"/></svg>
+                <div>
+                    <p>Opening Hours</p>
+                    <strong>Mon – Thu: 11:30 AM – 10:30 PM<br>Fri – Sun: 11:30 AM – 11:30 PM</strong>
+                </div>
+            </div>
+            <div class="info-item">
+                <svg viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg>
+                <div>
+                    <p>Reservations</p>
+                    <strong>+91 98765 43210</strong>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0!2d79.08816!3d21.15051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37cf3e4200407!2sSadar%2C%20Nagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ananda Restaurant Location – Nagpur, Maharashtra">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- ════════════════════════════════
+         12. FOOTER
+    ════════════════════════════════ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">Anan<span>da</span></a>
+                    <p>Elevating Indian cuisine through authentic recipes, premium ingredients, and royal hospitality. Experience the true taste of India.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter / X">
+                            <svg viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#menu">Food Menu</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Allergen Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="margin-bottom:15px; font-size:0.9rem;">Subscribe to get updates on new menus and special events.</p>
+                    <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" style="display:flex;">
+                        <input type="email" placeholder="Your email" required style="border-radius:4px 0 0 4px; border:none; padding:10px;">
+                        <button type="submit" class="btn btn-primary" style="border-radius:0 4px 4px 0; padding:10px 15px;">OK</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ananda Indian Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <span class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</span>
+        <img src="" alt="Enlarged gallery image" id="lightbox-img">
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
