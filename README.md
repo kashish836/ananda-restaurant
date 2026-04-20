@@ -4,13 +4,10 @@ A modern, fully responsive restaurant website designed to deliver a premium dini
 
 ---
 
-## 🔗 Live Demo
-
-👉 *(Will be added after deployment)*
+## 🔗 Live Demo 
+👉 https://ananda-restaurant.netlify.app/
 
 ---
-
-## 📸 Preview
 
 ## 📸 Preview
 
